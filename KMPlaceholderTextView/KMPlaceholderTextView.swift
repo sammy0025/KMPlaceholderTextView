@@ -109,6 +109,10 @@ public class KMPlaceholderTextView: UITextView {
         placeholderLabel.translatesAutoresizingMaskIntoConstraints = false
         addSubview(placeholderLabel)
         updateConstraintsForPlaceholderLabel()
+        // Enable textfield border
+        self.layer.cornerRadius = 2
+        self.layer.borderColor = UIColor(red: 213/255, green: 221/255, blue: 224/255, alpha: 1)
+        self.layer.borderWidth = 1
     }
     
     private func updateConstraintsForPlaceholderLabel() {
